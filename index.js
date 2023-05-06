@@ -43,7 +43,7 @@ console.log(__dirname);
         res.end("<h1>Page not found!!!</h1>")
     }
 })
-
-server.listen(8000, '127.0.0.1', () => {
+port = process.env.PORT || 8080;
+server.listen(port, () => {
     console.log("Listening to server...")
 })
